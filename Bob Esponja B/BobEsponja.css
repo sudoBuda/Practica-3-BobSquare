@@ -1,0 +1,291 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.background {
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.face {
+	background: yellow;
+	width: 600px;
+	height: 800px;
+	border: 10px solid black;
+	position: relative;
+	margin: 10% auto;
+	overflow: hidden;
+}
+
+.eyes-group {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	top: 10%;
+	width: 100%;
+}
+
+.eyes {
+	width: 200px;
+	height: 200px;
+	margin-right: -20px;
+	border-radius: 50vw;
+	background-color: white;
+	border: 10px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.eyes::after {
+	display: flex;
+	position: absolute;
+	content: "";
+	width: 60px;
+	height: 60px;
+	background-color: black;
+	border-radius: 50%;
+}
+.eyes::before {
+	position: absolute;
+	content: "";
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #00aeef;
+	border: 5px solid black;
+}
+
+.eyelash {
+	position: relative;
+	width: 14px;
+	height: 40px;
+	background-color: black;
+	top: -130px;
+}
+.eyelash::after {
+	position: absolute;
+	content: "";
+	width: 15px;
+	height: 40px;
+	background-color: black;
+	left: 60px;
+	top: 20px;
+	transform: rotate(45deg);
+}
+
+.eyelash::before {
+	position: absolute;
+	content: "";
+	width: 15px;
+	height: 40px;
+	background-color: black;
+	right: 60px;
+	top: 20px;
+	transform: rotate(-45deg);
+}
+
+.nose {
+	position: relative;
+	left: 275px;
+	width: 45px;
+	height: 100px;
+	background: yellow;
+	border-radius: 45%;
+	border: 10px solid black;
+	border-bottom: 10px solid transparent;
+}
+
+.mouth {
+	position: relative;
+	top: -100px;
+	left: 100px;
+	width: 400px;
+	height: 160px;
+	background: transparent;
+	border-radius: 50%;
+	border-bottom: 12px solid black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cheek1,
+.cheek2 {
+	position: relative;
+	width: 60px;
+	height: 40px;
+	background: transparent;
+	border: 5px solid orange;
+	border-radius: 75%;
+	border-bottom: 5px solid transparent;
+}
+
+.cheek1 {
+	left: -35px;
+}
+
+.cheek2 {
+	right: -35px;
+}
+
+.freckless {
+	display: block;
+	position: absolute;
+	left: 15%;
+	top: 30%;
+	height: 10px;
+	width: 10px;
+	background-color: orangered;
+	border-radius: 50%;
+}
+.freckless::after {
+	position: absolute;
+	content: "";
+	top: 0px;
+	left: 30px;
+	display: block;
+	height: 10px;
+	width: 10px;
+	background-color: orangered;
+	border-radius: 50%;
+}
+.freckless::before {
+	position: absolute;
+	content: "";
+	top: -5px;
+	left: 15px;
+	display: block;
+	height: 10px;
+	width: 10px;
+	background-color: orangered;
+	border-radius: 50%;
+}
+
+.teeh {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	position: relative;
+	top: -110px;
+}
+
+.tooth {
+	width: 40px;
+	height: 40px;
+	background: white;
+	border: 10px solid black;
+}
+
+.pore1,
+.pore2,
+.pore3 {
+	position: absolute;
+	background-color: #aead0d;
+	border-radius: 50%;
+}
+
+.pore1 {
+	height: 80px;
+	width: 80px;
+	top: 0px;
+}
+.pore2 {
+	top: 450px;
+	left: 40px;
+	height: 100px;
+	width: 100px;
+}
+
+.pore3 {
+	top: 110px;
+	right: 40px;
+	height: 30px;
+	width: 30px;
+}
+.pore3::before {
+	position: absolute;
+	bottom: -350px;
+	left: 20px;
+	content: "";
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #aead0d;
+}
+.pore3::after {
+	position: absolute;
+	bottom: -430px;
+	right: 90px;
+	content: "";
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #aead0d;
+}
+.groupbot {
+	position: relative;
+	top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.shirt {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background: white;
+	border-top: 10px solid black;
+	border-bottom: 10px solid black;
+	overflow-y: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+.neck {
+	position: relative;
+	top: -55px;
+	width: 80px;
+	height: 60px;
+	background: transparent;
+	border: 10px solid black;
+	transform: rotate(40deg);
+}
+.neckit {
+	position: relative;
+	top: -55px;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	background-color: red;
+	border: 10px solid black;
+	transform: rotate(45deg);
+}
+
+.pants {
+	width: 100%;
+	height: 98px;
+	position: relative;
+	background: rgb(95, 38, 0);
+	display: inline-flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.belt {
+	height: 30px;
+	width: 90px;
+	background-color: black;
+}
+
+.neckitbottom {
+	width: 110px;
+	height: 110px;
+	background-color: red;
+	border: 10px solid black;
+	position: absolute;
+	top: 90px;
+	transform: rotate(45deg);
+}
